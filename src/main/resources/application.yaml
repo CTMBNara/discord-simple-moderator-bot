@@ -1,0 +1,20 @@
+token: token
+rules:
+  - rule-type: block-gifs
+    users-ids:
+      - 1
+      - 2
+  - rule-type: block-matched-message
+    users-ids:
+      - 2
+      - 4
+    matchers:
+      - a
+      - b
+  - rule-type: block-not-matched-message
+    users-ids:
+      - 3
+      - 5
+    matchers:
+      - c
+      - d
